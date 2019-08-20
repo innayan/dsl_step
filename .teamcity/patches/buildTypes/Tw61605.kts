@@ -2,6 +2,7 @@ package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v2018_2.*
 import jetbrains.buildServer.configs.kotlin.v2018_2.BuildStep
+import jetbrains.buildServer.configs.kotlin.v2018_2.buildSteps.powerShell
 import jetbrains.buildServer.configs.kotlin.v2018_2.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.v2018_2.ui.*
 
@@ -56,6 +57,13 @@ changeBuildType(RelativeId("Tw61605")) {
     steps {
         update<BuildStep>(3) {
             enabled = false
+        }
+        insert(8) {
+            powerShell {
+                scriptMode = script {
+                    content = "sleep 60"
+                }
+            }
         }
     }
 }
