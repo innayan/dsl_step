@@ -41,6 +41,10 @@ object Tw61605 : BuildType({
             name = "Step1"
             scriptContent = "echo test"
         }
+         script {
+            name = "StepAaaaaaaaa"
+            scriptContent = "echo testAAAAAA"
+        }
         script {
             name = "Step2"
             scriptContent = "echo 2"
