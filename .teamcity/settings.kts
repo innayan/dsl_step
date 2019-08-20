@@ -61,6 +61,10 @@ params {
             name = "Step1"
             scriptContent = "echo test"
         }
+             script {
+            name = "StepZ"
+            scriptContent = "echo Z"
+        }
        
         script {
             name = "Step111111xxxxxxx"
