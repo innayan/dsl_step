@@ -55,6 +55,12 @@ object Tw61605 : BuildType({
             name = "Step1"
             scriptContent = "echo test"
         }
+        ps {
+        script {
+            name = "Step111111xxxxxxx"
+            id = "RUNNER_77"
+            scriptContent = "echo xxxxxxxxxxxxxxxxxxxxxxx"
+        }
     }
 })
 
