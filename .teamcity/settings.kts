@@ -33,7 +33,7 @@ project {
 }
 
 object Tw61605 : BuildType({
-    name = "TW-61605"
+    name = "TW-61605t"
     description = "View DSL action changes settings on disk (stores inherited build steps as overridden) when step editing is disabled"
 
     steps {
