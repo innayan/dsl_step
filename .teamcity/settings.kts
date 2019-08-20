@@ -65,6 +65,10 @@ object Tw61605 : BuildType({
             id = "RUNNER_77"
             scriptContent = "echo xxxxxxxxxxxxxxxxxxxxxxx"
         }
+         script {
+            name = "StepYYYY"
+            scriptContent = "echo YYYYY"
+        }
     }
 })
 
