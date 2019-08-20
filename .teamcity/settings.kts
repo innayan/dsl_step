@@ -45,6 +45,12 @@ object Tw61605 : BuildType({
             name = "Step2"
             scriptContent = "echo 2"
         }
+        step {
+            name = "Dynamic Library Build"
+            type = "PowerShell"
+            executionMode = BuildStep.ExecutionMode.DEFAULT
+            param("script.content", "")
+        }
     }
 })
 
