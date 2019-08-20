@@ -31,5 +31,11 @@ changeBuildType(RelativeId("Tw61605")) {
         update<BuildStep>(2) {
             name = "Dynamic Library Build6"
         }
+        insert(3) {
+            script {
+                name = "Step1"
+                scriptContent = "echo test"
+            }
+        }
     }
 }
